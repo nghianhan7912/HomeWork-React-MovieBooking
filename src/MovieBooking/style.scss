@@ -1,0 +1,73 @@
+.Chair {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    color:#FBE8BD;
+    &.disabled {
+        border: transparent;
+        pointer-events: none;
+    }
+
+    &.booking {
+        background-color: #F7C8B6;
+        color: white;
+    }
+
+    &.booked {
+        background-color: #0B3266;
+        color: white;
+        pointer-events: none;
+    }
+
+    &:hover {
+        background-color: black;
+        color: white;
+        transition: all .5s;
+    }
+}
+
+.MovieBooking {
+    .manHinh {
+        margin-top: 30px;
+        padding: 10px 0;
+        background-image: linear-gradient(109.6deg,rgba(156,252,248,1) 11.2%,rgba(110,123,251,1) 91.1% );
+        border-radius: 100px 100px 0 0;
+        box-shadow: 1px 12px 25px 3px #F5E0E7
+    }
+    .title{
+        margin: 30px 0;
+        color: #fbd786;
+    }
+}
+.App{
+    background-image: url("../../public/images/bgmovie.jpg");
+    height: 900px;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.Result{
+    .p{
+        padding-top: 6px;
+        color:rgba(255, 255, 0, 0.909),
+    }
+    .bang{
+        border-radius: 10px;
+        overflow: auto;
+        background-color: #F7C8B6;
+        margin-top: 30px
+    }
+    .btnPay{
+        padding: 10px;
+        border-radius:5px;
+        color: white;
+        background-image: linear-gradient(to right,#00b09b,#96c93d);
+        border: 1px solid yellow;
+    }
+}

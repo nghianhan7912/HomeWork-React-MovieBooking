@@ -1,0 +1,44 @@
+.Chair {
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  color: #FBE8BD;
+}
+.Chair.disabled {
+  border: transparent;
+  pointer-events: none;
+}
+.Chair.booking {
+  background-color: red;
+  color: white;
+}
+.Chair.booked {
+  background-color: gray;
+  color: white;
+  pointer-events: none;
+}
+.Chair:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.5s;
+}
+
+.MovieBooking .manHinh {
+  padding: 10px 0;
+  background-image: linear-gradient(109.6deg, rgb(156, 252, 248) 11.2%, rgb(110, 123, 251) 91.1%);
+  border-radius: 100px 100px 0 0;
+  box-shadow: 1px 12px 25px 3px #F5E0E7;
+}
+
+.App {
+  background-image: url("../../public/images/bgmovie.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*# sourceMappingURL=style.css.map */
